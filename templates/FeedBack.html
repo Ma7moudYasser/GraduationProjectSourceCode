@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <link rel="stylesheet" href="staticfiles/FeedBack.css">
+</head>
+<header>
+    <div class="upper">
+         <nav class="navigation">
+             <a href="Account.html">Account</a>
+             <a href="Graduation.html">Home</a>
+             <a href="about.html">About</a>
+             <a href="FeedBack.html">FeedBack</a>
+         </nav>
+    </div>
+    
+ </header>
+<h1 class="title">FeedBack</h1>
+
+<body>
+    
+    <p class="words">Email Us in case you have a feedback.</p>  
+	
+	
+    <form id="login-form" action="login.php" method="post">
+        <label for="name">Name :</label>
+        <input type="text" name="name" id="name" required><br><br>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" required><br><br>
+		<label for="feedback">FeedBack:</label>
+		<input type="feedback" name="feedback" id="feedback" required><br><br>
+		<input type="submit" value="Submit">
+	</form>
+</html>

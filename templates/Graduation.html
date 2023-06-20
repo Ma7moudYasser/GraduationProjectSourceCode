@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Written Bills Reader</title>
+    <link rel="stylesheet" href="staticfiles/sty.css">
+</head>
+<body>
+    <header>
+       <div class="upper">
+            <nav class="navigation">
+                <a href="Account.html">Account</a>
+                <a href="Graduation.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="FeedBack.html">FeedBack</a>
+            </nav>
+       </div>
+       
+    </header>
+   
+    <h2 class="title">
+        Hand Written Bills Reader
+    </h2>
+    
+    <main>
+		
+		<form id="upload-form" action="upload.php" method="post" enctype="multipart/form-data">
+			<label for="photo">Select a photo to upload:</label>
+			<input type="file" name="photo" id="photo" onchange="previewPhoto()">
+			<label for="name">Name :</label>
+			<input type="text" name="name" id="name" required><br><br>
+			<label for="description">Description :</label>
+			<textarea name="description" id="description"></textarea><br><br>
+			<input type="submit" value="Upload">
+		</form>
+        <p>login to your account?<a href="login.html">Login here</a>. </p>
+		<div id="preview-container"></div>
+	</main>
+    <div class="three">
+            <h3>Convert Your Bill Data into CSV File</h3> 
+        </div>
+    
+
+
+    
+    <script src="jav.js"></script>
+</body>
+</html>

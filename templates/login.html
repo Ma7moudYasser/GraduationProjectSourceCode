@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+	<link rel="stylesheet" href="staticfiles/style3.css">
+</head>
+<body>
+	<header>
+		<div class="upper">
+			<nav class="navigation">
+				<a href="Account.html">Account</a>
+				<a href="Graduation.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="FeedBack.html">FeedBack</a>
+			</nav>
+	   </div>
+	</header>
+	<main>
+		<h1 class="title">Login Page</h1>
+		<h2 class="title2">Login to Your Account</h2>
+		<form id="login-form" action="login.php" method="post">
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" required><br><br>
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password" required><br><br>
+			<input type="submit" value="Login">
+		</form>
+		<p>Don't have an account? <a href="register.html">Register here</a>.</p>
+	</main>
+	<footer>
+		<p>&copy; 2023 Photo Upload Website</p>
+	</footer>
+</body>
+</html>

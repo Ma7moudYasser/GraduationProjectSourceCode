@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Page</title>
+	<link rel="stylesheet" href="staticfiles/Untitled-1.css">
+</head>
+<body>
+	<header>
+		<div class="upper">
+			<nav class="navigation">
+				<a href="Account.html">Account</a>
+				<a href="Graduation.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="FeedBack.html">FeedBack</a>
+			</nav>
+	   </div>
+	   
+		
+		
+			
+		
+	</header>
+	<h1 class="title">Registration Page</h1>
+	<main>
+		<h2>Create a New Account</h2>
+		<form id="register-form" action="register.php" method="post">
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name" required><br><br>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" required><br><br>
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password" required><br><br>
+			<input type="submit" value="Register">
+		</form>
+		<p>Already have an account? <a href="login.html">Login here</a>.</p>
+	</main>
+	<footer>
+		<p>&copy; 2023 Photo Upload Website</p>
+	</footer>
+</body>
+</html>

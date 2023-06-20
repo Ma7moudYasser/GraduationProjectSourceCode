@@ -1,0 +1,107 @@
+/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-color: coral;
+}
+
+/* Header styles */
+header {
+	background-color: #fff;
+	color: black;
+	padding: 20px;
+	text-align: center;
+}
+.title{
+	text-align: center;
+}
+/* Navigation styles */
+nav {
+	background-color: #fff;
+	color: coral;
+	padding: 10px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #000000 ;
+    text-decoration: none;
+    font-weight: 1000;
+    margin-left: 200px;
+    
+}    
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #0d0b0b;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+
+
+/* Main content styles */
+main {
+	padding: 20px;
+}
+
+h2 {
+	text-align: center;
+}
+
+form {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: coral;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="email"],[type="text"], input[type="password"] {
+	width: 98%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid coral;
+	border-radius: 5px;
+}
+
+
+input[type="submit"] {
+	background-color: #555;
+	color: coral;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+p {
+	text-align: center;
+}
+
+a {
+	color: black;
+}
+
+/* Footer styles */
+footer {
+	background-color: coral;
+	color:coral;
+	padding: 10px;
+	text-align: center;
+}
